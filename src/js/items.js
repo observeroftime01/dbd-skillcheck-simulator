@@ -1,10 +1,10 @@
 
 const toolPrices = {
-    common: 3000,
-    uncommon: 4000,
-    rare: 5000,
-    veryRare: 6000,
-    ultraRare: 7000
+    common: 1500,
+    uncommon: 2000,
+    rare: 2500,
+    veryRare: 3000,
+    ultraRare: 3500
 }
 
 const free = false
@@ -18,14 +18,14 @@ const toolboxes = {
         easyName: 'Worn-Out Tools',
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.common,
         
-        charges: 16,
+        charges: 160,
         repairSpeed: 50,
         successZone: -10,
         description: 
         `
         <h2 class='p-item-name'>Worn-Out Tools</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>16 charges.</li>
+            <li class='p-item-true'>160 charges.</li>
             <li class='p-item-true'>Moderately increases repair speed. <strong>+50%</strong></li>
             <li class='p-item-true'>Slightly decreases Skill Check success zones. <strong>-10%</strong></li>
             <li class='p-item-false'>Unlocks the sabotage action.</li>
@@ -39,14 +39,14 @@ const toolboxes = {
         name: 'toolbox',
         easyName: 'Toolbox',
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.uncommon,
-        charges: 20,
+        charges: 200,
         repairSpeed: 50,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Toolbox (Item)</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>20 charges.</li>
+            <li class='p-item-true'>200 charges.</li>
             <li class='p-item-true'>Moderately increases repair speed. <strong>+50%</strong></li>
             <li class='p-item-false'>Unlocks the sabotage action.</li>
         </ul>
@@ -59,14 +59,14 @@ const toolboxes = {
         easyName: `Mechanic's Toolbox`,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.rare,
 
-        charges: 16,
+        charges: 160,
         repairSpeed: 75,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Mechanic's Toolbox</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>16 charges.</li>
+            <li class='p-item-true'>160 charges.</li>
             <li class='p-item-true'>Considerably increases repair speed. <strong>+75%</strong></li>
             <li class='p-item-false'>Moderately reduces sabotage speed. <strong>-10%</strong></li>
             <li class='p-item-false'>Unlocks the sabotage action.</li>
@@ -81,14 +81,14 @@ const toolboxes = {
         easyName: 'Commodious Toolbox',
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.rare,
 
-        charges: 32,
+        charges: 320,
         repairSpeed: 50,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Commodious Toolbox</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>32 charges.</li>
+            <li class='p-item-true'>320 charges.</li>
             <li class='p-item-true'>Moderately increases repair speed. <strong>+50%</strong></li>
             <li class='p-item-false'>Unlocks the sabotage action.</li>
         </ul>
@@ -101,14 +101,14 @@ const toolboxes = {
         easyName: `Engineer's Toolbox`,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.veryRare,
 
-        charges: 16,
+        charges: 160,
         repairSpeed: 100,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Engineer's Toolbox</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>16 charges.</li>
+            <li class='p-item-true'>160 charges.</li>
             <li class='p-item-true'>Tremendously increases repair speed. <strong>+100%</strong></li>
         </ul>
         `
@@ -120,7 +120,7 @@ const toolboxes = {
         easyName: `Alex's Toolbox` ,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.veryRare,
 
-        charges: 24,
+        charges: 240,
         repairSpeed: 50,
         successZone:0 ,
         description: 
@@ -128,7 +128,7 @@ const toolboxes = {
         <h2 class='p-item-name'>Alex's Toolbox</h2>
 
         <ul class='p-item-status'>
-            <li class='p-item-true'>24 charges.</li>
+            <li class='p-item-true'>240 charges.</li>
             <li class='p-item-true'>Slightly increases repair speed. <strong>+50%</strong></li>
             <li class='p-item-false'>Moderately increases sabotage speed.<strong>+10%</strong></li>
         </ul>
@@ -141,7 +141,7 @@ const toolboxes = {
         easyName: `Festive Toolbox` ,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.common,
 
-        charges: 24,
+        charges: 240,
         repairSpeed: 50,
         successZone:0 ,
         description:
@@ -149,7 +149,7 @@ const toolboxes = {
         <h2 class='p-item-name'>Festive Toolbox</h2>
 
         <ul class='p-item-status'>
-            <li class='p-item-true'>32 charges.</li>
+            <li class='p-item-true'>240 charges.</li>
             <li class='p-item-true'>Slightly increases repair speed. <strong>+50%</strong></li>
         </ul>
         `
@@ -165,14 +165,14 @@ const toolboxAddOns = {
         easyName: `Scraps` ,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.common,
 
-        charges: 8,
+        charges: 80,
         repairSpeed: 0,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Scraps</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>Increases the Capacity of the Toolbox by <strong>+8</strong> charges.</li>
+            <li class='p-item-true'>Increases the Capacity of the Toolbox by <strong>+80</strong> charges.</li>
         </ul>
         `
     },
@@ -185,13 +185,13 @@ const toolboxAddOns = {
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.common,
 
         charges: 0,
-        repairSpeed: 20,
+        repairSpeed: 200,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Clean Rag</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>Slightly increases the Toolbox's repair speed. <strong>+20%</strong></li>
+            <li class='p-item-true'>Slightly increases the Toolbox's repair speed. <strong>+200%</strong></li>
         </ul>
         `
     },
@@ -203,14 +203,14 @@ const toolboxAddOns = {
         easyName: `Wire Spool` ,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.uncommon,
         
-        charges: 12,
+        charges: 120,
         repairSpeed: 0,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Wire Spool</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>Adds 12 charges to the Toolbox.</li>
+            <li class='p-item-true'>Adds 120 charges to the Toolbox.</li>
         </ul>
         `
     },
@@ -223,13 +223,13 @@ const toolboxAddOns = {
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.uncommon,
 
         charges: 0,
-        repairSpeed: 30,
+        repairSpeed: 300,
         successZone: 0,
         description: 
         `
         <h2 class='p-item-name'>Socket Swivels</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>Moderately increases the Toolbox repair speed. <strong>+30%</strong></li>
+            <li class='p-item-true'>Moderately increases the Toolbox repair speed. <strong>+300%</strong></li>
         </ul>
         `
     },
@@ -241,8 +241,8 @@ const toolboxAddOns = {
         easyName: `Brand New Part` ,
         bloodpoints: free ? 0 : (sale / 100) * toolPrices.ultraRare,
         customProp:{
-            left:2,
-            tickProgression: 5,
+            left:5,
+            tickProgression: 10,
         },
         charges: 0,
         repairSpeed: 0,
@@ -251,8 +251,8 @@ const toolboxAddOns = {
             `
         <h2 class='p-item-name'>Brand New Part</h2>
         <ul class='p-item-status'>
-            <li class='p-item-true'>Triggers <strong>2</strong> difficult Skill Checks during the Installation process.</li>
-            <li class='p-item-true'>Succedding each Skill Check adds an additional <strong>5%</strong> bonus Progression, up to a maximum of <strong>10%</strong> bonus Progression,
+            <li class='p-item-true'>Triggers <strong>5</strong> difficult Skill Checks during the Installation process.</li>
+            <li class='p-item-true'>Succedding each Skill Check adds an additional <strong>10%</strong> bonus Progression, up to a maximum of <strong>50%</strong> bonus Progression,
 and a combined total of up to <strong>25%</strong> Generator Progression.</li>
 
         </ul>

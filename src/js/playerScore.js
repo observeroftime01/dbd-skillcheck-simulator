@@ -88,14 +88,14 @@ const score = (status) => {
             }
             if (status == 'great') {
                 // base points + 50 * combo points, starting from the second combo point
-                points = gameOptions[status] + (store.state.playerStats.stats.rowScore * 50)
+                points = gameOptions[status] + (store.state.playerStats.stats.rowScore * 150)
                 combo(true)
                 // add bonus points in order to complete a generator 'x%' faster
                 if (isBrand){
                     store.state.gameStatus.now.charges += (isBrand / 100) * 80
                 }
                 if (!isBrand &&!store.state.gameStatus.now.brokeGeneratorEffect && !store.state.gameStatus.now.brokeGeneratorEffectRunning && skillcheckSpawnCoordinates.mode !== 'hex') {
-                    store.state.gameStatus.now.charges += (2 / 100) * 80 // add 2% bonus
+                    store.state.gameStatus.now.charges += (5 / 100) * 80 // add 2% bonus
                 }
                 store.commit('updateObjectivePoints',
                     {
